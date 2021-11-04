@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -28,8 +28,40 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/albums">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/albums"
+              >
                 Albums
+              </Link>
+            </li>
+          </ul>
+
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/register"
+              >
+                Register
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link active" aria-current="page" to="/login">
+                Login
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/profile"
+              >
+                Profile
               </Link>
             </li>
           </ul>
