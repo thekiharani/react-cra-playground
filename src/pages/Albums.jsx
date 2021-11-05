@@ -8,7 +8,8 @@ const Albums = () => {
   const [albums, setAlbums] = useState([])
 
   const getAlbums = async () => {
-    const res = await axios.get('/albums')
+    const API_URL = 'https://jsonplaceholder.typicode.com/albums'
+    const res = await axios.get(API_URL)
     setAlbums(res.data)
   }
 

@@ -8,8 +8,8 @@ const Posts = () => {
   const [posts, setPosts] = useState([])
 
   const getPosts = async () => {
-    // const URL = 'https://jsonplaceholder.typicode.com/posts'
-    const res = await axios.get('/posts')
+    const API_URL = 'https://jsonplaceholder.typicode.com/posts'
+    const res = await axios.get(API_URL)
     setPosts(res.data)
   }
 

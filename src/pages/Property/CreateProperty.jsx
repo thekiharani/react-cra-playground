@@ -11,7 +11,7 @@ const CreateProperty = () => {
   const token = localStorage.getItem('token')
   if (!token) history.replace('/login')
   const headers = {
-    'Content-Type': 'application/json',
+    'Content-Type': 'multipart/formdata',
     Authorization: `Bearer ${token}`,
   }
 
