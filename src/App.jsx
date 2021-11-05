@@ -6,6 +6,7 @@ import Profile from "./pages/Auth/Profile"
 import Register from "./pages/Auth/Register"
 import Verify from "./pages/Auth/Verify"
 import Posts from './pages/Posts'
+import CreateProperty from "./pages/Property/CreateProperty"
 
 function App() {
   return (
@@ -36,6 +37,10 @@ function App() {
 
           <Route exact path="/verify">
             <Verify />
+          </Route>
+
+          <Route exact path="/property">
+            <CreateProperty />
           </Route>
 
           <Route exact path="/profile">

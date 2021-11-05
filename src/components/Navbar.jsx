@@ -64,6 +64,15 @@ const Navbar = () => {
                 Profile
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/property"
+              >
+                Property
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

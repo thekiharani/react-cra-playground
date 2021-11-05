@@ -27,6 +27,10 @@ const Login = () => {
     console.log(res.data)
     if (res.data.status === 200) {
       localStorage.setItem('token', res.data.token)
+    }
+    if (res.data.user.is_verified) {
+      history.replace('/profile')
+    } else {
       history.replace('/verify')
     }
   }
