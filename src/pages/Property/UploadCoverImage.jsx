@@ -9,7 +9,7 @@ const UploadCoverImage = ({ propertyID }) => {
   const token = localStorage.getItem('token')
   if (!token) history.replace('/login')
   const headers = {
-    'Content-Type': 'application/json',
+    'Content-Type': 'multipart/form-data',
     Authorization: `Bearer ${token}`,
   }
 
