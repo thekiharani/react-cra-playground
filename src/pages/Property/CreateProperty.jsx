@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { useHistory } from 'react-router'
 import { API_URL } from '../../config'
+import UploadCoverImage from "./UploadCoverImage"
 
 const { useState, useEffect } = React
 
@@ -81,6 +82,15 @@ const CreateProperty = () => {
                   <p>Listing Type: {p.listing_type}</p>
                   <p>Bulding Type: {p.building_type}</p>
                   <p>Stay Type: {p.stay_type}</p>
+
+                  <img
+                    src={p.cover_image}
+                    alt="NA"
+                    className="img"
+                    width="300"
+                  />
+
+                  <UploadCoverImage propertyID={p.id} />
                 </div>
               </div>
             </div>
